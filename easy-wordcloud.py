@@ -38,7 +38,7 @@ def load_mask_image(mask_filename: str):
         return None
 
 
-def read_all_txt(folder_path: str, pattern: str = "combined.txt") -> str:
+def read_all_txt(folder_path: str, pattern: str = "*.txt") -> str:
     text = ""
     glob_pattern = os.path.join(folder_path, pattern)
 
@@ -132,7 +132,7 @@ def generate_and_save_wordcloud(
     "-p",
     "--pattern",
     "filename_pattern",
-    default="combined.txt",
+    default="*.txt",
     show_default=True,
     help="Glob pattern for input text files inside the folder.",
 )
@@ -171,12 +171,12 @@ def generate_and_save_wordcloud(
 @click.option(
     "--include-stopwords",
     is_flag=True,
-    help="Generate word cloud that includes stopwords (default behaviour).",
+    help="Only generate a word cloud that includes stopwords.",
 )
 @click.option(
     "--exclude-stopwords",
     is_flag=True,
-    help="Generate word cloud that excludes stopwords (default behaviour).",
+    help="Only generate a word cloud that excludes stopwords.",
 )
 def cli(
     folder_path,
@@ -204,9 +204,9 @@ def cli(
     # Combine default + extra filter terms
     filter_terms = DEFAULT_FILTER_TERMS + list(extra_filter_terms)
 
-    # Decide what to generate
-    # - If no flags: generate both
-    # - If flags: respect them
+    # Decide what to generate:
+    # - If neither include nor exclude is specified: generate both
+    # - If one is specified: generate only that one
     generate_with = include_stopwords or not (include_stopwords or exclude_stopwords)
     generate_without = exclude_stopwords or not (include_stopwords or exclude_stopwords)
 
