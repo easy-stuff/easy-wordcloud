@@ -14,15 +14,17 @@ Create word cloud images easily and quickly from text files, with mask support, 
 
 ## Installation
 
-```bash
-pip install click wordcloud pillow numpy matplotlib
-```
-
 Clone the repository:
 
 ```bash
 git clone https://github.com/yourusername/easy-wordcloud.git
 cd easy-wordcloud
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
 ```
 
 ## Basic Usage
@@ -95,9 +97,9 @@ python easy-wordcloud.py -t confidential -t regards -t thanks
 
 ```bash
 python easy-wordcloud.py \
-  --folder ./notes \
+  --folder ./example \
   --pattern "*.txt" \
-  --mask silhouette.png \
+  --mask ./example/mask.png \
   --output-dir results \
   --max-words 200 \
   -t hi -t thanks \
