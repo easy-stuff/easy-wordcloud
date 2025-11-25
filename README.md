@@ -32,7 +32,7 @@ pip install -r requirements.txt
 If your folder contains `combined.txt` and `mask.png`, simply run:
 
 ```bash
-python wordcloud.py
+python easy-wordcloud.py
 ```
 
 This will produce:
@@ -47,49 +47,49 @@ This will produce:
 ### Use a different input folder
 
 ```bash
-python wordcloud.py --folder ./emails
+python easy-wordcloud.py --folder ./emails
 ```
 
 ### Use a different filename pattern
 
 ```bash
-python wordcloud.py --pattern "*.txt"
+python easy-wordcloud.py --pattern "*.txt"
 ```
 
 ### Use a custom mask image
 
 ```bash
-python wordcloud.py --mask ./mask.png
+python easy-wordcloud.py --mask ./mask.png
 ```
 
 ### Specify an output directory
 
 ```bash
-python wordcloud.py --output-dir ./output
+python easy-wordcloud.py --output-dir ./output
 ```
 
 ### Only generate the version without stopwords
 
 ```bash
-python wordcloud.py --exclude-stopwords
+python easy-wordcloud.py --exclude-stopwords
 ```
 
 ### Only generate the version with stopwords
 
 ```bash
-python wordcloud.py --include-stopwords
+python easy-wordcloud.py --include-stopwords
 ```
 
 ### Add custom terms to filter
 
 ```bash
-python wordcloud.py -t hi -t thanks -t regards
+python easy-wordcloud.py -t hi -t thanks -t regards
 ```
 
 ### Full example
 
 ```bash
-python wordcloud.py \
+python easy-wordcloud.py \
   --folder ./emails \
   --pattern "*.txt" \
   --mask mask.png \
