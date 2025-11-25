@@ -1,0 +1,76 @@
+From: john.doe@example.com
+Sent: Monday, 12 August 2024 9:41 AM
+To: support@example.com
+Subject: Issue with login
+
+Hi team,
+I'm unable to login to my account since yesterday. The system keeps showing an authentication error.  
+Please help. This is quite urgent.
+
+Thanks,
+John
+
+---
+
+From: support@example.com
+Sent: Monday, 12 August 2024 10:15 AM
+To: john.doe@example.com
+Subject: Re: Issue with login
+
+Hi John,
+Thanks for reaching out.  
+We are looking into the login issue. Can you confirm if you're using the latest version of the app?
+
+Best regards,
+Support Team
+
+---
+
+Forwarded message
+From: manager@example.com
+Date: Tuesday, 13 August 2024
+Subject: Weekly update
+
+Hello everyone,
+Here’s the weekly summary for our project.  
+We completed the API integration and fixed several bugs in the authentication module.  
+Testing will continue through the week.
+
+Please review the documentation and send your feedback.
+
+---
+
+Meeting notes:
+- Discuss API endpoints for user creation
+- Review login error logs
+- Improve password reset flow
+- Add more unit tests
+- Deploy new version on staging server
+
+---
+
+Random text section:
+Call me when you're free.  
+The server crashed again last night.  
+We need to upgrade the database.  
+Authentication, authentication, authentication — this word should appear large in the cloud.  
+Testing is going well.  
+Login issues still persist for multiple users.  
+Error logs indicate failure in token validation.  
+Please review the code and push the update.
+
+---
+
+Another email:
+
+From: jane.smith@example.com
+To: team@example.com
+Subject: Feature request
+
+Hi team,
+Can we add a dark mode toggle to the dashboard?  
+A lot of users requested this feature in the last survey.  
+Let me know your thoughts.
+
+Thanks,
+Jane
